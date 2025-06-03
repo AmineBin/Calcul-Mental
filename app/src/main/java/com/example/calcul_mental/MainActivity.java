@@ -2,6 +2,7 @@ package com.example.calcul_mental;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -26,10 +27,13 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         boutonJouer = findViewById(R.id.btnJouer);
-        boutonJouer.setOnClickListener( v -> {
-            Toast.makeText(MainActivity.this, "TOAST", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(MainActivity.this, CalculMentalActivity.class);
-            startActivity(intent);
+        boutonJouer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,CalculMentalActivity.class);
+                startActivity(intent);
+                Toast.makeText(MainActivity.this,"truc de toast",Toast.LENGTH_LONG).show();
+            }
         });
     }
 
