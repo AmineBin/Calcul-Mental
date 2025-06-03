@@ -1,6 +1,9 @@
 package com.example.calcul_mental;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button boutonJouer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        boutonJouer = findViewById(R.id.btnJouer);
+        boutonJouer.setOnClickListener( v -> {
+            Toast.makeText(MainActivity.this, "TOAST", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(MainActivity.this, CalculMentalActivity.class);
+            startActivity(intent);
+        });
     }
+
 
 }
