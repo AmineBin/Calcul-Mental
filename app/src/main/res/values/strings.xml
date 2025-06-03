@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Calcul-Mental</string>
+    <string name="calcul_mental">Jouer</string>
+    <string name="repondre">Répondre</string>
 </resources>
