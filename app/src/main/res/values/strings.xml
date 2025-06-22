@@ -7,12 +7,13 @@
     <string name="repondre">Répondre</string>
     <string name="reponse">Réponse :</string>
     <string name="fin">Fin de la partie !</string>
-    <string name="accueil">Retour à l'accueil</string>
+    <string name="accueil">Retour à l\'accueil</string>
     <string name="vao">Vous avez obtenu</string>
+    <string name="brp">bonnes réponses !</string>
     <string name="apropos">À propos</string>
     <string
         name="pave">Cette application a été réalisé par Amine Binoumar, Kilian Godimus et Thomas Bustamante.
-        C'est une application de jeu de calcul mental, pour lancer votre partie rendez vous dans l'accueil et
+        C\'est une application de jeu de calcul mental, pour lancer votre partie rendez vous dans l\'accueil et
         apuyer sur le bouton "Jouer". Vous aurez 3 vies, le jeu ne se termine que lors ce que vous perdez toutes vos vies.
         Bonne chance !
     </string>
