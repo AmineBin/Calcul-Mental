@@ -2,6 +2,7 @@ package com.example.calcul_mental;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.RequiresApi;
@@ -19,6 +20,7 @@ public class CalculMentalActivity extends AppCompatActivity {
     private Integer resultat;
     private TypeOperation typeoperation;
 
+    private TextView textViewCalcul;
 
     protected void Valeur() {
         Random random = new Random();
@@ -61,5 +63,7 @@ public class CalculMentalActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        textViewCalcul=findViewById(R.id.textView);
     }
+
 }
