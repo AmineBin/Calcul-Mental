@@ -13,6 +13,8 @@
         android:theme="@style/Theme.CalculMental"
         tools:targetApi="31">
         <activity android:name=".CalculMentalActivity" android:exported="false"/>
+        <activity android:name=".FinActivity" android:exported="false"/>
+        <activity android:name=".AProposActivity" android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

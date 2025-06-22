@@ -11,6 +11,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.core.graphics.Insets;
 import androidx.activity.EdgeToEdge;
 
+import android.content.Intent;
+
 import java.util.Random;
 
 public class CalculMentalActivity extends AppCompatActivity {
@@ -78,9 +80,10 @@ public class CalculMentalActivity extends AppCompatActivity {
                         updateStats();
 
                         if (vies <= 0) {
-                            editTextNumber.setEnabled(false);
-                            btnJouer.setEnabled(false);
-                            editTextNumber.setError("Perdu ! Le jeu est terminé.");
+                            Intent intent = new Intent(CalculMentalActivity.this, FinActivity.class);
+                            intent.putExtra("SCORE", score);
+                            startActivity(intent);
+                            finish();
                         } else {
                             editTextNumber.setError("Mauvaise réponse !");
                         }
@@ -138,4 +141,6 @@ public class CalculMentalActivity extends AppCompatActivity {
         textViewScore.setText("Score : " + score);
         textViewVies.setText("Vies : " + vies);
     }
+
+
 }
