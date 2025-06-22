@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Calcul-Mental</string>
-    <string name="calcul_mental">Jouer</string>
+    <string name="fr">Français</string>
+    <string name="en">Anglais</string>
+    <string name="jouer">Jouer</string>
+    <string name="info">À propos</string>
     <string name="repondre">Répondre</string>
+    <string name="reponse">Réponse :</string>
 </resources>

@@ -12,6 +12,34 @@
     tools:layout_editor_absoluteY="-79dp">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="650dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnFr"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#A24EF6"
+            android:text="@string/fr"
+            app:cornerRadius="15px" />
+
+        <Button
+            android:id="@+id/btnEn"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#A24EF6"
+            android:text="@string/en"
+            app:cornerRadius="15px" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
@@ -27,7 +55,7 @@
             android:layout_width="150dp"
             android:layout_height="45dp"
             android:backgroundTint="#A24EF6"
-            android:text="@string/calcul_mental"
+            android:text="@string/jouer"
             app:cornerRadius="15px" />
 
         <Button
@@ -35,7 +63,7 @@
             android:layout_width="150dp"
             android:layout_height="45dp"
             android:backgroundTint="#A24EF6"
-            android:text="A propos"
+            android:text="@string/info"
             app:cornerRadius="15px" />
     </LinearLayout>
 
