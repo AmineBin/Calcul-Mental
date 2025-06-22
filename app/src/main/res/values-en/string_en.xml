@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Mental Math</string>
+    <string name="fr">French</string>
+    <string name="en">English</string>
+    <string name="jouer">Play</string>
+    <string name="info">About</string>
+    <string name="repondre">Answer</string>
+    <string name="reponse">Answer :</string>
+    <string name="fin">Game Over !</string>
+    <string name="accueil">Back to Home</string>
+    <string name="vao">You got</string>
+    <string name="apropos">About</string>
+    <string name="pave">
+        This application was created by Amine Binoumar, Kilian Godimus, and Thomas Bustamante.
+        It is a mental math game. To start your game, go to the home screen and press the "Play" button.
+        You will have 3 lives. The game ends only when you lose all your lives.
+        Good luck !
+    </string>
+</resources>
