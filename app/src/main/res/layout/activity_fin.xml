@@ -12,8 +12,8 @@
     tools:layout_editor_absoluteY="-79dp">
 
     <LinearLayout
-        android:layout_width="237dp"
-        android:layout_height="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,32 +23,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.357">
 
-
-
-        <TextView
-            android:id="@+id/premierChiffre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="50px" />
-
-        <TextView
-            android:id="@+id/operateur"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="50px" />
-
         <TextView
             android:id="@+id/Fin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@string/fin"
             android:textSize="50px" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -56,47 +40,56 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.053">
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/fin3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Réponse :"
-            android:textSize="50px" />
+            android:layout_weight="1"
+            android:text="@string/vao"
+            android:textSize="36px" />
 
-        <EditText
-            android:id="@+id/editTextNumber"
-            android:layout_width="151dp"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="number" />
+        <TextView
+            android:id="@+id/fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nb réponses"
+            android:textSize="36px" />
 
+        <TextView
+            android:id="@+id/fin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/brp"
+            android:textSize="36px" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="400dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002">
+        app:layout_constraintVertical_bias="0.198">
 
         <Button
-            android:id="@+id/btnJouer"
-            android:layout_width="150dp"
+            android:id="@+id/btnAccueil"
+            android:layout_width="200dp"
             android:layout_height="45dp"
             android:backgroundTint="#A24EF6"
-            android:text="@string/repondre"
+            android:text="@string/accueil"
             app:cornerRadius="15px" />
     </LinearLayout>
 
