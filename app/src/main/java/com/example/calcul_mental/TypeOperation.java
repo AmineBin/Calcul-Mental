@@ -8,16 +8,15 @@ public enum TypeOperation {
     MULTIPLIER("X"),
     DIVISER(":");
 
-    private String sybole;
+    private String symbole;
 
     TypeOperation(String s) {
-        this.sybole=s;
+        this.symbole=s;
     }
 
-    public String getSybole() {
-        return sybole;
+    public String getSymbole() {
+        return symbole;
     }
-    //    PremierElem DeuxiemeElem
     public static Integer calcul(TypeOperation typeoperation, Integer PremierElem,Integer DeuxiemeElem){
         switch (typeoperation){
             case PLUS:
